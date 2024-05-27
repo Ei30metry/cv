@@ -1,135 +1,81 @@
 \documentclass{article}
 
-\usepackage{titlesec}
-\usepackage{titling}
+\usepackage{titlesec} \usepackage{titling}
 \usepackage[margin=1in]{geometry}
 
-\titleformat{\section}
-{\huge\bfseries}
-{}
-{0em}
-{}
+\titleformat{\section} {\huge\bfseries} {} {0em} {}
 
-\titleformat{\subsection}
-{\bfseries\Large}
-{}
-{0em}
-{}
+\titleformat{\subsection} {\bfseries\Large} {} {0em} {}
 
-\titleformat{\subsubsection}[runin]
-{\bfseries}
-{}
-{0em}
-{}[:]
+\titleformat{\subsubsection}[runin] {\bfseries} {} {0em} {}[:]
 
 \renewcommand{\maketitle}{
-    \begin{center}
-        \huge{\theauthor}
+  \begin{center} \huge{\theauthor}
 
     \vspace{.25em}
 
-    \end{center}
-}
+  \end{center} }
 
-\titlespacing{\subsubsection}
-{1em}{.5em}{1em}
+\titlespacing{\subsubsection} {1em}{.5em}{1em}
 
-\titleformat{\section}[frame]
-{\huge}
-{}
-{.25em}
-{\filcenter\bfseries}
+\titleformat{\section}[frame] {\huge} {} {.25em} {\filcenter\bfseries}
 
 \begin{document}
 
-\title{Resume}
-\author{Artin Ghasivand}
+\title{Resume} \author{Artin Ghasivand}
 \maketitle
 
 \section{Contact info}
 \begin{itemize}
-    \item \textbf{E-mail}: ghasivand.artin@gmail.com
-    \item \textbf{Github}: Ei30metry
-    \item \textbf{Gitlab}: Ei30metry
-    \item \textbf{GHC Gitlab}: https://gitlab.haskell.org/Ei30metry
-    \item \textbf{Phone}: +98 910 2400 320
+\item \textbf{E-mail}: ghasivand.artin@gmail.com
+\item \textbf{Github}: https://github.com/Ei30metry
+\item \textbf{GHC Gitlab}: https://gitlab.haskell.org/Ei30metry
+\item \textbf{Phone}: +98 910 2400 320
 
 \end{itemize}
 
+\newpage
 
 \section{Technical skills}
 
 \subsection{Programming and Markup Languages}
 
 \begin{itemize}
-
-    \item \textbf{Haskell}:
-       \begin{itemize}
-
-       \item \textbf{GHC Internals}
-       \item \textbf{Libraries}: Mtl, Transformers, Aeson, Text, ByteString, Map, Data.Kind, Data.Type.Equality, Parsec, ParserCombinators, wreq, Lens, Sequence, Vector, Fmt and ...
-       \item  \textbf{Type-level programming}: Dependent style Haskell using the Singletons library and language extensions like: TypeInType, TemplateHaskell, TypeFamilies and ...
-           
-       \end{itemize}
-
-    \item \textbf{C}: standard library and a little bit of libcurl
-    \item \textbf{In progress}: Agda
-    \item \textbf{Python}: general scripting and web scraping
-    \item \textbf{Typescript}: standard library, bcrypt, typeORM
-    \item \textbf{Emacs LISP}
-    \item \textbf{\LaTeX}
-    \item \textbf{Markdown}
-
-\end{itemize}
-
-\subsection{Backend Frameworks}
-\begin{itemize}
-
-    \item \textbf{Nest.js}: small experience with normal CRUD operations
-
+\item \textbf{Haskell}: GHC internals, Type-level programming,
+\item \textbf{C}
+\item \textbf{In progress}: Agda, Lean
+\item \textbf{Python}: general scripting and web scraping
+\item \textbf{Emacs LISP}
+\item \textbf{\LaTeX}
+\item \textbf{ott}
 \end{itemize}
 
 \subsection{Tools}
 
 \begin{itemize}
-    \item GNU Make 
-    \item stack
-    \item cabal
-    \item docker
-    \item nix
-    \item git
-\end{itemize}
-
-\section{General skills} 
-
-\begin{itemize}
-
-    \item Inductive reasoning
-    \item Eager learner
-    \item Teamwork
-    \item Expressing ideas in simple words
-    \item Organized 
-    \item Searching
-    \item Planning
-
+\item GNU Make
+\item stack and cabal
+\item docker
+\item nix
+\item git
 \end{itemize}
 
 \section{Education}
 
 \begin{itemize}
-    \item Highschool Diploma
-    \item C2 proficiency English
-    \item GHC contributers workshop 2023
+\item Highschool Diploma
+\item GHC contributers workshop 2023
 \end{itemize}
 
 \section{Work Experience}
 \begin{itemize}
-      \item Python Programmer and Linux Administrator at a crypto startup called Cryptal global, for 6 months
+\item Python Programmer and Linux Administrator at a crypto startup
+called Cryptal global, for 6 months
 \end{itemize}
 
 \section{Other Experiences}
 \begin{itemize}
-        \item Biology Olympiad
+\item Biology Olympiad
 \end{itemize}
 
 \end{document}
