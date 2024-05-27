@@ -1,81 +1,67 @@
-\documentclass{article}
+\documentclass[
+	a4paper,
+	11pt,
+]{resume}
 
-\usepackage{titlesec} \usepackage{titling}
-\usepackage[margin=1in]{geometry}
+\usepackage{ebgaramond}
 
-\titleformat{\section} {\huge} {} {0em} {}
+\name{Artin Ghasivand}
 
-\titleformat{\subsection} {\bfseries} {} {0em} {}
-
-\titleformat{\subsubsection}[runin] {\bfseries} {} {0em} {}[:]
-
-\renewcommand{\maketitle}{
-  \begin{center} \huge{\theauthor}
-
-    \vspace{.25em}
-
-  \end{center} }
-
-\titlespacing{\subsubsection} {1em}{.5em}{1em}
-
-\titleformat{\section}[frame] {\huge} {} {.25em} {\filcenter\bfseries}
+\address{\textbf{E-Mail}: ghasivand.artin@gmail.com}
+\address{\textbf{Haskell Gitlab}: https://gitlab.haskell.org/Ei30metry}
+\address{\textbf{Github}: https://github.com/Ei30metry}
 
 \begin{document}
 
-\title{Resume} \author{Artin Ghasivand}
-\maketitle
+\section{Preface Letter}
+Thanks for putting the time and effort to read this.
 
-\section{Contact info}
-\begin{itemize}
-\item \textbf{E-mail}: ghasivand.artin@gmail.com
-\item \textbf{Github}: https://github.com/Ei30metry
-\item \textbf{Haskell Gitlab}: https://gitlab.haskell.org/Ei30metry
-\item \textbf{Phone}: +98 910 2400 320
-
-\end{itemize}
 
 \newpage
 
-\section{Technical skills}
+\section{CV}
+\begin{rSection}{Education}
+	\textbf{Mandegar Alborz High School} \hfill \textit{June 2022} \\
+	Diploma in Mathematics \& Physics \\
+    Member of Biology Olympiad class \\
+\end{rSection}
 
-\subsection{Programming and Markup Languages}
+\begin{rSection}{Experience}
 
-\begin{itemize}
-\item \textbf{Haskell}: GHC internals, Type-level programming,
-\item \textbf{C}
-\item \textbf{In progress}: Agda, Lean
-\item \textbf{Python}: general scripting and web scraping
-\item \textbf{Emacs LISP}
-\item \textbf{\LaTeX}
-\item \textbf{ott}
-\end{itemize}
+  \begin{rSubsection}{Cryptal global}{October 2010 - Present}{Junior Developer}{Dubai, UAE}
+  \item Automation bots in Python
+  \item DevOps and Linux Administration
+  \end{rSubsection}
 
-\subsection{Tools}
+\end{rSection}
 
-\begin{itemize}
-\item GNU Make
-\item stack and cabal
-\item docker
-\item nix
-\item git
-\end{itemize}
+\begin{rSection}{Projects}
 
-\section{Education}
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
 
-\begin{itemize}
-\item Highschool Diploma
-\item GHC contributers workshop 2023
-\end{itemize}
+\begin{rSection}{Technical Strengths}
 
-\section{Work Experience}
-\begin{itemize}
-\item Python Programmer and Linux Administrator at a crypto startup
-called Cryptal global, for 6 months
-\end{itemize}
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+      Programming Languages & Haskell, Agda, Emacs Lisp, Python, C \\
+      Other Languages & \LaTeX, ott \\
+      Tools & Git, Emacs, Nix \\
+	\end{tabular}
 
-\section{Other Experiences}
-\begin{itemize}
-\item Biology Olympiad
-\end{itemize}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
