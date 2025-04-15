@@ -4,63 +4,20 @@
 ]{resume}
 
 \usepackage{ebgaramond}
+\usepackage{hyperref}
 
 \name{Artin Ghasivand}
 
+\address{\textbf{Homepage}: \href{https://artingh.com}{artingh.com}}
 \address{\textbf{E-Mail}: ghasivand.artin@gmail.com}
-\address{\textbf{Haskell Gitlab}: https://gitlab.haskell.org/Ei30metry}
-\address{\textbf{Github}: https://github.com/Ei30metry}
+\address{%
+         \textbf{Haskell Gitlab}: \href{https://gitlab.haskell.org/Ei30metry}{gitlab.haskell.org/Ei30metry} \\
+         \textbf{Github}: \href{https://github.com/Ei30metry}{github.com/Ei30metry}}
 
 \begin{document}
 
-\section{Preface Letter}
-Dear reader,
-
-Thank you for taking the time and effort to read this.
-
-I graduated from high school two years ago, which was two years after
-I wrote my first "hello world" in Python and a year after I started my
-Haskell journey. I fell in love with functional programming so much
-that I decided it would be worthwhile to take a gap year to self-study
-and get a job. So that's exactly what I did.
-
-After some time, I realized that I wasn't satisfied with my job and
-that I would love to dedicate all of my time to functional programming
-and programming language theory. Following this decision, I decided
-that I wanted to work directly on GHC and try to fulfill my wish of
-adding Dependent Types to it. Coincidentally, about six to seven
-months later, I found out that the Haskell Foundation was holding a
-workshop prior to Zurihac to help Haskellers get involved in the
-development of GHC. With the help of HF (David Thrane Christiansen)
-and Zurihac organizers (Farhad D. Mehta), I was able to attend both of
-these events.
-
-During the workshop, I met Simon Peyton Jones and asked him for ways
-to get involved in the theoretical side of things, which resulted in
-Simon Peyton Jones, Richard Eisenberg, and me collaborating on our
-current research project—a specification for GHC's type system. This
-project has been the main focus of my life since then.
-
-I also decided that it was time to enroll in university and got
-accepted to Durham. Unfortunately, I haven't been able to find a
-funding source that would let me accept the offer yet.
-
-I believe that attending PLMW/ICFP is the next step to becoming a good
-researcher and helping me decide which university I will apply to next
-year. However, due to inflation and the incredibly high cost of
-international travel, I won't be able to do it by myself. This is why
-I would appreciate it if you, the reader, consider this application,
-despite the fact that I am not enrolled in university yet.
-
-Best wishes,
-
-Artin Ghasivand
-
-\newpage
-
-\section{CV}
 \begin{rSection}{Education}
-	\textbf{Mandegar Alborz High School} \hfill \textit{December 2022} \\
+	\href{https://en.wikipedia.org/wiki/Alborz_High_School}{\textbf{Alborz High School}} \hfill \textit{January 2023} \\
 	Diploma in Mathematics \& Physics \\
     Member of Biology Olympiad class \\
 \end{rSection}
@@ -74,39 +31,61 @@ Artin Ghasivand
 
 \end{rSection}
 
-\begin{rSection}{Projects}
+\begin{rSection}{Volunteering}
 
-  \textbf{Blueprint (WIP)}: Inline outgoing call-hierarchies in functions using the GHC-api \\
-  https://github.com/Ei30metry/blueprint \\
-
-  \textbf{Hygeia (WIP)}: A CLI program to keep track of your moods \\
-  https://github.com/Ei30metry/Hygeia \\
+  \begin{rSubsection}{Haskell Foundation}{Feb 2023 - Present}{Podcast quality inspector}{}
+  \item Work with the editor and the hosts of the \href{https://haskell.foundation/podcast/}{Haskell interlude}
+        podcast to make sure the episodes don't contain quality problems like noises or repetitive dialogues.
+  \end{rSubsection}
 
 \end{rSection}
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+  \href{https://gitlab.haskell.org/Ei30metry/haskell}{\textbf{Implementation of the GHC formalism paper (WIP)}}: Typechecker for Haskell \\
+  A fresh Haskell-typechecker built on top of the formalism described in the
+  \href{https://gitlab.haskell.org/Ei30metry/haskell/-/jobs/artifacts/wip/term/raw/haskell.pdf?job=build-pdf}
+  {Typing of GHC Haskell, Part I (Early Draft). Artin Ghasivand, Simon Peyton Jones and Richard A. Eisenberg} paper, with key focuses of being:
+  \begin{itemize}
+  \item A one-to-one match to the inference rules.
+  \item A robust way to test the underlying formalism.
+  \item A pedagogical tool for teaching about typecheckers and implementing them.
+  \end{itemize}
+
+  \href{https://github.com/Ei30metry/blueprint}{\textbf{Blueprint (WIP)}}: Pretty-print outgoing call-hierarchies of Haskell functions \\
+  The project uses the Glasgow Haskell Comiler as a \href{https://hackage.haskell.org/package/ghc}{library} to query the internal
+  abstract syntax tree representation of Haskell functions and pretty-print it to the user.
+  Although the project isn't finished yet, it helped me get familiar with GHC's internals, got accepted as one of Zurihac 2023's \href{https://zfoh.ch/zurihac2023/projects/}{projects}
+  , and had a key role in helping me attend \href{https://haskell.foundation/events/2023-ghc-development-workshop.html}{GHC 2023 Contributors' workshop}.
+
+  \href{https://github.com/Ei30metry/Hygeia}{\textbf{Hygeia (WIP)}}: A CLI program to keep track of your moods \\
+  The project was initially started with the sole purpose of writing an actual program in Haskell that parsed
+  a text file containing a special format to report feelings, do some summarization, and report the pretty-printed
+  output to the user.
+
+  Key educational points of the project:
+  \begin{itemize}
+  \item A text parser written using the \href{https://hackage.haskell.org/package/parsec}{parsec} library.
+  \item Command line argument parser using the \href{https://hackage.haskell.org/package/optparse-applicative}{optpars-applicative} library.
+  \item Pretty-printer using the \href{https://hackage.haskell.org/package/prettyprinter}{prettyprinter} library.
+  \item The older versions used the \href{https://hackage.haskell.org/package/singletons}{singletons} library, which was later removed to simplify the codebase.
+  \item The monad stacks are managed using the \href{https://hackage.haskell.org/package/mtl}{monad transformers} library.
+  \end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Talks}
+  A good programming language is a \emph{Functional} one, University of Tehran. (\href{https://github.com/Ei30metry/fp-haskell-talk-UT/blob/main/slides.pdf}{slides}, \href{https://www.youtube.com/watch?v=DbJGux_-aP0}{video})
+\end{rSection}
 
 \begin{rSection}{Technical Strengths}
 
 	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
-      Programming Languages & Haskell, Agda, Emacs Lisp, Python, C \\
+      Programming Languages & Haskell, Agda, Emacs Lisp, Common Lisp, Python, C \\
       Other Languages & \LaTeX, ott \\
-      Tools & Git, Emacs, Nix, Docker \\
+      Tools & Git, Nix, GNU Make, Docker \\
 	\end{tabular}
 
 \end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-	%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
