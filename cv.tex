@@ -46,11 +46,9 @@
   A fresh Haskell-typechecker built on top of the formalism described in the
   \href{https://gitlab.haskell.org/Ei30metry/haskell/-/jobs/artifacts/wip/term/raw/haskell.pdf?job=build-pdf}
   {Typing of GHC Haskell, Part I (Early Draft). Artin Ghasivand, Simon Peyton Jones and Richard A. Eisenberg} paper, with key focuses of being:
-  \begin{itemize}
-  \item A one-to-one match to the inference rules.
-  \item A robust way to test the underlying formalism.
-  \item A pedagogical tool for teaching about typecheckers and implementing them.
-  \end{itemize}
+  A one-to-one match to the inference rules,
+  a robust way to test the underlying formalism,
+  and a pedagogical tool for teaching about type-checkers and implementing them.
 
   \href{https://github.com/Ei30metry/blueprint}{\textbf{Blueprint (WIP)}}: Pretty-print outgoing call-hierarchies of Haskell functions \\
   The project uses the Glasgow Haskell Comiler as a \href{https://hackage.haskell.org/package/ghc}{library} to query the internal
@@ -60,18 +58,14 @@
 
   \href{https://github.com/Ei30metry/Hygeia}{\textbf{Hygeia (WIP)}}: A CLI program to keep track of your moods \\
   The project was initially started with the sole purpose of writing an actual program in Haskell that parsed
-  a text file containing a special format to report feelings, do some summarization, and report the pretty-printed
+  a text file containing a special format with feeling entries, do some summarization, and report the pretty-printed
   output to the user.
 
-  Key educational points of the project:
-  \begin{itemize}
-  \item A text parser written using the \href{https://hackage.haskell.org/package/parsec}{parsec} library.
-  \item Command line argument parser using the \href{https://hackage.haskell.org/package/optparse-applicative}{optpars-applicative} library.
-  \item Pretty-printer using the \href{https://hackage.haskell.org/package/prettyprinter}{prettyprinter} library.
-  \item The older versions used the \href{https://hackage.haskell.org/package/singletons}{singletons} library, which was later removed to simplify the codebase.
-  \item The monad stacks are managed using the \href{https://hackage.haskell.org/package/mtl}{monad transformers} library.
-  \end{itemize}
-
+  Key educational points of the project: A text parser written using \href{https://hackage.haskell.org/package/parsec}{parsec},
+  a command line argument parser using \href{https://hackage.haskell.org/package/optparse-applicative}{optpars-applicative},
+  a pretty-printer using \href{https://hackage.haskell.org/package/prettyprinter}{prettyprinter},
+  and managed effects using the \href{https://hackage.haskell.org/package/mtl}{monad transformers} library.
+  The older versions also used the \href{https://hackage.haskell.org/package/singletons}{singletons} library, which was later removed to simplify the codebase.
 \end{rSection}
 
 \begin{rSection}{Talks}
